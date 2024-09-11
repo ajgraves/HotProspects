@@ -13,6 +13,7 @@
 		0A1848862C8F86E400B31529 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A1848852C8F86E400B31529 /* Preview Assets.xcassets */; };
 		0A3E56292C91EA9C00FD15A8 /* ProspectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E56282C91EA9C00FD15A8 /* ProspectsView.swift */; };
 		0A3E562B2C91EAA400FD15A8 /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E562A2C91EAA400FD15A8 /* MeView.swift */; };
+		0A3E562D2C91ECC700FD15A8 /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E562C2C91ECC700FD15A8 /* Prospect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		0A1848852C8F86E400B31529 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0A3E56282C91EA9C00FD15A8 /* ProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectsView.swift; sourceTree = "<group>"; };
 		0A3E562A2C91EAA400FD15A8 /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
+		0A3E562C2C91ECC700FD15A8 /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			children = (
 				0A18487E2C8F86E300B31529 /* HotProspectsApp.swift */,
 				0A1848802C8F86E300B31529 /* ContentView.swift */,
+				0A3E562C2C91ECC700FD15A8 /* Prospect.swift */,
 				0A3E56282C91EA9C00FD15A8 /* ProspectsView.swift */,
 				0A3E562A2C91EAA400FD15A8 /* MeView.swift */,
 				0A1848822C8F86E400B31529 /* Assets.xcassets */,
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A3E562B2C91EAA400FD15A8 /* MeView.swift in Sources */,
+				0A3E562D2C91ECC700FD15A8 /* Prospect.swift in Sources */,
 				0A3E56292C91EA9C00FD15A8 /* ProspectsView.swift in Sources */,
 				0A1848812C8F86E300B31529 /* ContentView.swift in Sources */,
 				0A18487F2C8F86E300B31529 /* HotProspectsApp.swift in Sources */,

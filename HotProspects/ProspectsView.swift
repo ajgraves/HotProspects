@@ -5,12 +5,16 @@
 //  Created by Aaron Graves on 9/11/24.
 //
 
+import SwiftData
 import SwiftUI
 
 struct ProspectsView: View {
     enum FilterType {
         case none, contacted, uncontacted
     }
+    
+    @Environment(\.modelContext) var modelContext
+    @Query(sort: \Prospect.name) var prospects: [Prospect]
     
     let filter: FilterType
     
@@ -27,12 +31,19 @@ struct ProspectsView: View {
     
     var body: some View {
         NavigationStack {
-            Text("Hello, world!")
+            Text("People: \(prospects.count)")
                 .navigationTitle(title)
+                .toolbar {
+                    Button("Scan", systemImage: "qrcode.viewfinder") {
+                        let prospect = Prospect(name: "Paul Hudson", emailAddress: "paul@hackingwithswift.com", isContacted: false)
+                        modelContext.insert(prospect)
+                    }
+                }
         }
     }
 }
 
 #Preview {
     ProspectsView(filter: .none)
+        .modelContainer(for: Prospect.self)
 }
